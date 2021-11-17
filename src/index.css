@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #44BBA4;
+  border-bottom: 1px solid #008570;
+}
+.navbar h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: white;
+}
+.navbar a:hover {
+  color: black;
+}
+
+.content {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+} 
+
+.centerize {
+  display: flex;
+  justify-content: center;
+}
+.loginsignupform {
+  background-color: #44BBA4;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  height: 75vh;
+  width: 40vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginsignupform h2{
+  color: white;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.loginsignupform form {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.loginsignupform input {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.form-btn {
+  background-color: white;
+  color: #44BBA4;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loginsignupform p {
+  color: red;
+}
+
+.create {
+  background-color: white;
+  box-shadow: 1px 3px 5px rgba(0.3,0.3,0.3,0.3);
+  border-left: 15px solid #44BBA4;
+  height: 75vh;
+  width: 70vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create h2{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.create-project {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 30px;
+}
+
+.create-project input {
+  padding: 5px;
+}
+.create-project textarea {
+  margin-top: 10px;
+  padding: 5px;
+  height:130px;
+}
+
+.create-project label {
+  margin-left: 3px;
+}
+
+.project-wrapper {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.project-wrapper h2 {
+  position: absolute;
+  left: -5px;
+  top: -40px;
+  background-color: #44BBA4;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 1px 3px 5px rgba(0.3,0.3,0.3,0.3);
+  border-radius: 5px;
+  color: white;
+}
+
+.project {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 1px 3px 5px rgba(0.3,0.3,0.3,0.3);
+  border-left: 10px solid #44BBA4;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer; 
+}
+
+.no-project {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 1px 3px 5px rgba(0.3,0.3,0.3,0.3);
+  border-left: 10px solid red;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px; 
+}
+
+.project:hover {
+  border-left: 15px solid #44BBA4;
+}
+
+.project a {
+  text-decoration: none;
+  color: black;
+}
+
+.loading {
+  padding-top: 20px;
+}
+
+.project-details {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 1px 3px 5px rgba(0.3,0.3,0.3,0.3);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-details p {
+  color: #008570;
+}
+
+.create-btn {
+  padding: 3px;
+  background-color: #44BBA4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.delete-btn {
+  padding: 3px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.issue-related {
+  margin-left: 70px;
+  margin-top: 40px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.issue-related h3{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  left: -10px;
+  top: -35px;
+  background-color: white;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 1px 3px 5px rgba(0.3,0.3,0.3,0.3);
+  border-radius: 5px;
+  border: 2px solid #44BBA4;
+  color: #44BBA4;
+}
+
+.new-issue {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height : 100vh;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-issue-form {
+  background-color: #44BBA4;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  height: 75vh;
+  width: 40vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.create-issue-form form {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.create-issue-form p{
+  color: white;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.create-issue {
+  color: white;
+  margin-top: -10px;
+}
+
+.create-issue input{
+  padding: 2px;
+  margin-bottom: 10px;
+}
+
+.create-issue select{
+  margin-bottom: 5px;
+}
+
+.submit {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+.confirm {
+  background-color: white;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  height: 100px;
+  width: 30vw;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 15px;
+}
+
+.confirm p {
+  font-weight: bold;
+}
+
+.issue-details {
+  position: relative;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 1px 3px 5px rgba(0.3,0.3,0.3,0.3);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.issue-description {
+  width: 35%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.issue-details h2 {
+  position: absolute;
+  left: -15px;
+  top: -40px;
+  background-color: #44BBA4;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 1px 3px 5px rgba(0.3,0.3,0.3,0.3);
+  border-radius: 5px;
+  color: white;
+}
